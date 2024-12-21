@@ -4,14 +4,14 @@ import {
   HydrationBoundary,
   QueryClient,
 } from "@tanstack/react-query";
-import Hero from "@/components/home/Hero";
+import Content from "@/components/about/Content";
 
-export default function Homepage() {
+export default function AboutPage() {
   const queryClient = new QueryClient();
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <Hero />
+      <Content />
     </HydrationBoundary>
   );
 }
